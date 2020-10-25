@@ -1,0 +1,1237 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background: linear-gradient(to right, #2f2359, #4c3991);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    position: relative;
+}
+
+header nav img {
+    padding-top: 5px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 5px 25px;
+    cursor: pointer;
+}
+
+header nav ul li:hover {
+    border-bottom: 1px solid #ffffff;
+}
+
+header nav ul #liCo {
+    background-color: #bf3676;
+    border-radius: 22px;
+    margin-left: 30px;
+}
+
+header nav ul #liCo:hover {
+    border: none;
+}
+
+header #headerImg {
+    position: absolute;
+    right: 0;
+    top: 250px;
+}
+
+header #headerBloc {
+    width: 500px;
+    color: #ffffff;
+    margin: 250px 0 0 18%;
+    position: relative;
+    z-index: 100;
+}
+
+header #headerBloc h1 {
+    font-weight: 800;
+    font-size: 46px;
+}
+
+header #headerBloc #headerTxt {
+    font-size: 16px;
+}
+
+header #headerBloc #headerButton {
+    width: 250px;
+    padding: 7px 25px;
+    font-weight: 500;
+    font-size: 19px;
+    border-radius: 22px;
+    background-color: #bf3676;
+    cursor: pointer;
+}
+
+header #headerBloc p {
+    margin: 20px 0;
+}
+
+header #headerArrow {
+    width: 36px;
+    height: 45px;
+    margin: 250px auto 0 auto;
+    padding-bottom: 35px;
+}
+
+header #headerArrow img {
+    width: 100%;
+    height: 100%;
+}
+
+
+main #section1 {
+    background-image: url(img/background.png);
+    height: 1000px;
+}
+
+main #section1 h2 {
+    font-size: 40px;
+    color: #bf3676;
+    text-align: center;  
+    padding-top: 50px;  
+}
+
+main #section1 hr {
+    width: 250px;
+    border: 1px solid #bf3676;
+    margin: 25px auto;
+}
+
+main #section1 #sct1Desc {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+main #section1 #artBloc {
+    width: 1050px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+main #section1 .articles {
+    width: 500px;
+}
+
+main #section1 article {
+    width: 100%;
+    position: relative;
+    margin-left: 75px;
+}
+
+main #section1 #artBloc #artBottom1 {
+    margin-top: 75px;
+}
+
+main #section1 #artBloc #artBottom2 {
+    margin-top: 100px;
+}
+
+main #section1 #artBloc .articles .ellipse {
+    width: 11px;
+    height: 11px;
+    background-color: #bf3676;
+    border-radius: 20px;
+    position: absolute;
+    top: 11px;
+}
+
+main #section1 #artBloc .articles #un {
+    left: 265px;
+}
+
+main #section1 #artBloc .articles #deux {
+    left: 240px;
+}
+
+main #section1 #artBloc .articles #trois {
+    left: 410px;
+}
+
+main #section1 #artBloc .articles #quatre {
+    left: 270px;
+}
+
+main #section1 article img {
+    position: absolute;
+    left: -75px;
+    top: 25px;
+}
+
+main #section1 article h3 {
+    font-size: 21px;
+    font-weight: 600;
+    color: #222222;
+}
+
+main #section1 article p {
+    width: 435px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #222222;
+}
+
+main #section1 #p90 {
+    transform: rotate(90deg);
+    font-size: 10px;
+    color: #929292;
+    width: 450px;
+    position: absolute;
+    right: -30%;
+    top: 175px;
+}
+
+main #section1 #sct1Button {
+    width: 290px;
+    margin: 0 auto;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 19px;
+    padding: 12px 35px;
+    border-radius: 27.5px;
+    background-color: #bf3676;
+    cursor: pointer;
+}
+
+main #section2 {
+    width: 80%;
+    margin: 0 auto;
+    height: 500px;
+    padding-bottom: 100px;
+}
+
+main #section2 h2 {
+    color: #bf3676;
+    font-size: 40px;
+    padding-top: 75px;
+}
+
+main #section2 hr {
+    width: 250px;
+    border: 1px solid #bf3676;
+    margin: 20px 0 60px 0;
+}
+
+
+main #section2 #slider {
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+main #section2 #slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+main #section2 #slides::-webkit-scrollbar {
+    display: none;
+}
+
+main #section2 .slide {
+    width: 478px;
+    display: flex;
+    box-shadow: 0.9px 10px 15.5px 0.5px rgba(98, 98, 98, 0.19);
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 20px 50px 20px 20px;
+    cursor: pointer;
+}
+
+main #section2 .slide .sldLogo {
+    padding: 35px 25px;
+}
+
+main #section2 .slide .sldTxt {
+    position: relative;
+    padding: 35px 0;
+    width: 300px;
+}
+
+main #section2 .sldTxt ul {
+    list-style-type: none;
+    display: flex;
+}
+
+main #section2 .sldTxt ul li {
+    font-size: 12px;
+    color: #ffffff;
+    padding: 2px 15px;
+    border-radius: 15px;
+    background-color: #d3c4f2;
+    margin-right: 10px;
+}
+
+main #section2 .sldTxt .sldH1 {
+    font-size: 21px;
+    font-weight: 600;
+    color: #222222;
+    padding-top: 5px;
+}
+
+main #section2 .sldTxt .sldH2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #222222;
+}
+
+main #section2 .sldTxt .sldImg1 {
+    position: absolute;
+    left: -10px;
+}
+
+main #section2 .sldTxt .sldImg2 {
+    position: relative;
+    z-index: 10;
+    position: absolute;
+    left: 10px;
+}
+
+main #section2 .sldTxt .sldP {
+    font-size: 16px;
+    font-weight: 300;
+    color: #747474;
+    margin-left: 70px;
+    margin-top: 8px;
+}
+
+main #section2 .sldTxt .sldPsing {
+    margin-left: 50px;
+}
+
+main #section2 #slider #sldHref {
+    text-align: center;
+    margin-top: 50px;
+}
+
+main #section2 #slider #sldHref a div{
+    width: 19px;
+    height: 19px;
+    border-radius: 20px;
+    background-color: #818181;
+    display: inline-flex;
+    margin: 7px;
+}
+
+main #section2 #slider #sldHref a div:hover {
+    background-color: #bf3676;
+}
+
+
+
+main #section3 {
+    background: linear-gradient(to top, #2f2359, #4c3991);
+    position: relative;
+    height: 775px;
+}
+
+main #section3 h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #ffffff;
+    padding-top: 50px;
+}
+
+main #section3 hr {
+    width: 250px;
+    border: 1px solid #ffffff;
+    margin: 25px auto;
+}
+
+main #section3 #bgImg {
+    width: 866px;
+    height: 364px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main #section3 #sct3Bloc {
+    width: 65%;
+    margin: 0 auto;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 70px 0;
+}
+
+main #section3 #sct3Bloc #sct3Txt1 {
+    width: 500px;
+}
+
+main #section3 #sct3Bloc #sct3Txt1 h4 {
+    font-size: 21px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+main #section3 #sct3Bloc #sct3Txt1 h4 span {
+    color: #2f2359;
+    font-weight: 600;
+    font-size: 16.5px;
+    background-color: #ffffff;
+    border-radius: 13px;
+    padding: 0 20px;
+}
+
+main #section3 #sct3Bloc #sct3Txt1 p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+main #section3 #sct3Bloc #sct3Txt1 p span {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+main #section3 #sct3Bloc #sct3Txt2 {
+    padding-top: 40px;
+}
+
+main #section3 #sct3Bloc #sct3Txt2 > div {
+    display: flex;
+    padding: 13px 0;
+}
+
+main #section3 #sct3Bloc #sct3Txt2 .ellipse {
+    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    color: #2f2359;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+main #section3 #sct3Bloc #sct3Txt2 p {
+    padding-left: 25px;
+    width: 500px;
+}
+
+main #section3 #sct3Button {
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 500;
+    padding: 12px 50px;
+    border-radius: 30px;
+    background-color: #bf3676;
+    width: 460px;
+    margin: 30px auto 0 auto;
+    cursor: pointer;
+}
+
+main #section4 {
+    display: flex;
+}
+
+main #section4 #left {
+    width: 50%;
+    position: relative;
+}
+
+main #section4 #left #sct4Txt {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+
+main #section4 #left #sct4Txt p {
+    font-size: 24px;
+    font-weight: 500;
+    color: #222222;
+}
+
+main #section4 #left #sct4Txt .i {
+    padding-left: 20px;
+}
+
+main #section4 #left #sct4Txt #legende {
+    font-size: 14px;
+    color: #bbbbbb;
+}
+
+main #section4 #left #sct4Txt img {
+    position: absolute;
+    top: -35px;
+    right: 0;
+}
+
+main #section4 #left #sct4Txt div {
+    background-color: #222222;
+    width: 9px;
+    height: 55px;
+    position: absolute;
+    top: 8px;
+    left: 0;
+}
+
+main #section4 #right {
+    width: 50%;
+}
+
+main #section4 #right img {
+    float: right;
+}
+
+footer {
+    background-image: url(img/background-footer.png);
+    width: 100%;
+}
+
+footer #section5 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer #section5 #logo {
+    padding: 75px 0 30px 0;
+}
+
+footer #section5 p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    padding-bottom: 25px;
+    cursor: default;
+}
+
+footer .footerDiv {
+    display: flex;
+}
+
+footer .footerDiv #pDec {
+    padding-right: 130px;
+}
+
+footer .footerDiv #pTheme {
+    padding-right: 77px;
+}
+
+footer #footerNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer #footerNav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+footer #footerNav ul li {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+footer #section5 hr {
+    margin: 30px 0 20px 0;
+}
+
+footer #section5 #pFinal {
+    font-weight: normal;
+    font-size: 11px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1370px) {
+    main #section1 #p90 {
+        display: none;
+    }
+
+    main #section1 #artBloc {
+        width: 550px;
+    }
+
+    main #section1 #artBloc #artBottom1 {
+        margin-bottom: 75px;
+    }
+
+    main #section1 {
+        height: 1370px;
+    }
+
+    header #headerImg {
+        opacity: 10%;
+    }
+
+    main #section3 #sct3Bloc {
+        flex-direction: column;
+        width: 550px;
+    }
+
+    main #section3 {
+        height: 975px;
+    }
+
+    main #section4 #right img {
+        width: 100%;
+    }
+
+    main #section4 #left #sct4Txt {
+        width: 80%;
+    }
+
+    main #section4 #left #sct4Txt p {
+        font-size: 18px;
+    }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    header nav ul li {
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+
+    main #section2 h2 {
+        font-size: 33px;
+    }
+
+    main #section2 .sldTxt .sldH1 {
+        font-size: 19px;
+    }
+
+    main #section2 .sldTxt .sldH2 {
+        font-size: 14px;
+    }
+
+    main #section2 .sldTxt .sldP {
+        font-size: 14px;
+    }
+
+    main #section2 .sldTxt ul li {
+        font-size: 10px;
+    }
+
+    main #section2 .slide .sldLogo img {
+        width: 90px;
+    }
+
+    main #section2 .slide {
+        width: 400px;
+    }
+
+    main #section3 h2 {
+        font-size: 33px;
+    }
+
+    main #section4 #left #sct4Txt p {
+        font-size: 14px;
+    }
+
+    main #section4 #left #sct4Txt div {
+        height: 40px;
+        width: 7px;
+    }
+
+    main #section4 #left #sct4Txt .i {
+        padding-left: 13px;
+    }
+
+    main #section4 #left #sct4Txt #legende {
+        font-size: 10px;
+    }
+
+    footer #section5 #pFinal {
+        font-size: 10px;
+    }
+
+    main #section1 #sct1Desc {
+        width: 600px;
+        font-size: 15px;
+    }
+
+    main #section3 #bgImg {
+        width: 600px;
+    }
+
+    main #section3 #bgImg img {
+        width: 100%;
+    }
+
+    header #headerBloc {
+        margin-top: 100px;
+    }
+
+    header #headerImg {
+        top: 75px;
+    }
+}
+
+
+
+@media screen and (max-width: 750px) {
+    header nav img {
+        width: 150px;
+    }
+
+    header nav ul li {
+        font-size: 12px;
+        padding: 5px 7px;
+    }
+
+    header #headerBloc h1 {
+        font-size: 30px;
+    }
+
+    header #headerBloc #headerTxt {
+        font-size: 13px;
+    }
+
+    header #headerBloc #headerButton {
+        font-size: 15px;
+        padding: 5px 20px;
+        width: 198px;
+    }
+
+    header #headerArrow {
+        margin-top: 75px;
+    }
+
+    header #headerImg {
+        width: 575px;
+    }
+
+    main #section1 h2 {
+        font-size: 25px;
+    }
+
+    main #section1 #sct1Desc {
+        font-size: 12px;
+        width: 80%;
+    }
+
+    main #section1 article img {
+        width: 35px;
+        top: 15px;
+    }
+
+    main #section1 article h3 {
+        font-size: 18px;
+    }
+
+    main #section1 article p {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    main #section1 .articles {
+        width: 80%;
+    }
+
+    main #section1 #artBloc .articles #un {
+        left: 225px;
+    }
+
+    main #section1 #artBloc .articles #deux {
+        left: 209px;
+    }
+
+    main #section1 #artBloc .articles #trois {
+        left: 350px;
+    }
+
+    main #section1 #artBloc .articles #quatre {
+        left: 232px;
+    }
+
+    main #section1 #artBloc .articles .ellipse {
+        top: 9px;
+    }
+
+    main #section1 #artBloc {
+        margin: 75px auto 25px auto;
+    }
+
+    main #section1 #artBloc #artBottom1 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    main #section1 #artBloc #artBottom2 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    main #section1 #sct1Button {
+        font-size: 15px;
+        padding: 8px 25px;
+        width: 229px;
+    }
+
+    main #section1 {
+        height: 960px;
+    }
+
+    main #section2 h2 {
+        font-size: 25px;
+    }
+
+    main #section2 hr {
+        width: 185px;
+        margin-bottom: 35px;
+    }
+    
+
+    main #section2 .sldTxt .sldH1 {
+        font-size: 16px;
+    }
+
+    main #section2 .sldTxt .sldH2 {
+        font-size: 11px;
+    }
+
+    main #section2 .sldTxt .sldP {
+        font-size: 11px;
+        margin-left: 50px;
+    }
+
+    main #section2 .sldTxt ul li {
+        font-size: 8px;
+        padding: 1px 10px;
+    }
+
+    main #section2 .slide .sldLogo img {
+        width: 70px;
+    }
+
+    main #section2 .slide {
+        width: 330px;
+        margin-left: 10px;
+    }
+
+    main #section2 .sldTxt .sldImg1 {
+        width: 45px;
+    }
+
+    main #section2 .sldTxt .sldImg2 {
+        width: 45px;
+        left: 7px;
+    }
+
+    main #section2 .slide .sldTxt {
+        padding: 20px 0;
+    }
+
+    main #section2 .slide .sldLogo {
+        padding: 24px 20px;
+    }
+
+    main #section2 #slider #sldHref a div {
+        width: 15px;
+        height: 15px;
+    }
+
+    main #section2 #slider #sldHref {
+        margin-top: 25px;
+    }
+
+    main #section2 {
+        padding-bottom: 0;
+        height: 440px;
+    }
+
+    main #section3 h2 {
+        font-size: 25px;
+    }
+
+    main #section3 #sct3Bloc #sct3Txt1 h4 {
+        font-size: 19px;
+        padding-bottom: 20px;
+    }
+
+    main #section3 #sct3Bloc #sct3Txt1 p {
+        font-size: 13px;
+    }
+
+    main #section3 #sct3Bloc #sct3Txt1 p span {
+        font-size: 11px;
+    }
+
+    main #section3 #sct3Bloc {
+        width: 80%;
+    }
+
+    main #section3 #bgImg {
+        width: 100%;
+    }
+
+    main #section3 #sct3Bloc #sct3Txt2 .ellipse {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+    }
+
+    main #section3 #sct3Bloc #sct3Txt2 p {
+        width: 100%;
+        padding-left: 10px;
+        font-size: 12px;
+    }
+
+    main #section3 #sct3Button {
+        font-size: 15px;
+        width: 362px;
+        padding: 8px 30px;
+        margin-top: 0;
+    }
+
+    main #section3 {
+        height: 775px;
+    }
+
+    main #section4 #left #sct4Txt {
+        top: 100px;
+    }
+
+    main #section4 #left #sct4Txt img {
+        width: 50px;
+        top: 2px;
+    }
+
+    main #section4 {
+        flex-direction: column-reverse;
+    }
+
+    main #section4 #left {
+        width: 100%;
+        padding-bottom: 90px;
+    }
+
+    main #section4 #right {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+
+    main #section4 #left #sct4Txt p {
+        font-size: 12px;
+    }
+
+    main #section4 #left #sct4Txt div {
+        height: 15px;
+        width: 4px;
+        top: 4px;
+    }
+
+    main #section4 #left #sct4Txt .i {
+        padding-left: 8px;
+    }
+
+    main #section4 #left #sct4Txt br {
+        display: none;
+    }
+
+    main #section4 #left #sct4Txt #legende {
+        font-size: 8px;
+    }
+
+    footer #section5 #logo {
+        width: 145px;
+        padding-top: 50px;
+    }
+
+    footer #section5 p {
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+
+    footer #section5 #pFinal {
+        font-size: 8px;
+    }
+
+    footer .footerDiv #pDec {
+        padding-right: 123px;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    header nav a {
+        width: 200px;
+        margin: 0 auto;
+    }
+    
+    header nav img {
+        width: 100%;
+    }
+
+    header nav ul {
+        justify-content: space-around;
+        padding-top: 20px;
+    }
+
+    header #headerBloc {
+        width: 90%;
+        margin: 100px auto 0 auto;
+    }
+
+    main #section1 #artBloc {
+        width: 80%;
+        margin-bottom: 0;
+    }
+
+    main #section1 #artBloc .articles .ellipse {
+        display: none;
+    }
+
+    main #section1 h2 {
+        font-size: 20px;
+    }
+
+    main #section2 h2 {
+        font-size: 20px;
+        padding-top: 40px;
+    }
+
+    main #section3 h2 {
+        font-size: 20px;
+    }
+
+    main #section3 #sct3Bloc #sct3Txt1 {
+        width: 100%;
+    }
+
+    main #section3 #sct3Bloc #sct3Txt1 h4 {
+        font-size: 15px;
+    }
+
+    main #section3 #sct3Bloc #sct3Txt1 h4 span {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+    main #section3 #sct3Bloc #sct3Txt1 p {
+        font-size: 10px;
+    }
+
+    main #section3 #sct3Bloc #sct3Txt1 p span {
+        font-size: 8px;
+    }
+
+    main #section3 #sct3Bloc #sct3Txt2 .ellipse {
+        width: 20px;
+        height: 20px;
+        font-size: 15px;
+    }
+
+    main #section3 #sct3Bloc #sct3Txt2 p {
+        font-size: 10px;
+    }
+
+    main #section3 #sct3Button {
+        font-size: 10px;
+        width: 242px;
+        padding: 5px 20px;
+    }
+
+    main #section3 #sct3Bloc {
+        padding-bottom: 40px;
+    }
+
+    main #section1 #sct1Button {
+        font-size: 10px;
+        width: 153px;
+        padding: 5px 20px;
+    }
+
+    main #section1 {
+        height: 1000px;
+    }
+
+    footer #section5 #pFinal {
+        font-size: 6px;
+    }
+
+    header nav ul li {
+        padding: 0 3px;
+        font-size: 10px;
+    }
+
+    header nav ul #liCo {
+        margin-left: 0;
+    }
+
+    main #section1 #sct1Desc {
+        font-size: 10px;
+    }
+
+    header #headerImg {
+        width: 315px;
+        top: 137px;
+    }
+
+    header #headerBloc h1 {
+        font-size: 25px;
+    }
+
+    header #headerBloc #headerTxt {
+        font-size: 10px;
+        padding-bottom: 30px;
+    }
+
+    header #headerBloc #headerButton {
+        font-size: 10px;
+        width: 132px;
+        padding: 5px 20px;
+        margin: 0 auto;
+    }
+
+    main #section1 article p {
+        font-size: 10px;
+    }
+
+    main #section1 article h3 {
+        font-size: 15px;
+    }
+
+    main #section1 article img {
+        left: -50px;
+    }
+
+    main #section1 article {
+        margin-left: 50px;
+    }
+
+    main #section2 hr {
+        width: 100px;
+    }
+
+    main #section2 #slider {
+        width: 95%;
+    }
+
+    main #section2 .sldTxt .sldH1 {
+        font-size: 13px;
+    }
+
+    main #section2 .sldTxt .sldH2 {
+        font-size: 9px;
+    }
+
+    main #section2 .sldTxt .sldP {
+        font-size: 9px;
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+
+    main #section2 .sldTxt ul li {
+        font-size: 6px;
+        padding: 1px 10px;
+    }
+
+    main #section2 .slide .sldLogo img {
+        width: 50px;
+    }
+
+    main #section2 .slide {
+        width: 225px;
+        margin-left: 0;
+    }
+
+    main #section2 .sldTxt .sldImg1 {
+        width: 30px;
+    }
+
+    main #section2 .sldTxt .sldImg2 {
+        width: 30px;
+        left: 2px;
+    }
+
+    main #section2 .slide .sldTxt {
+        padding: 10px 0;
+    }
+
+    main #section2 .slide .sldLogo {
+        padding: 15px 10px;
+    }
+
+    main #section2 #slider #sldHref a div {
+        width: 10px;
+        height: 10px;
+    }
+
+    main #section2 #slider #sldHref {
+        margin-top: 20px;
+    }
+
+    main #section2 {
+        height: 375px;
+    }
+
+    main #section4 #right {
+        padding-top: 25px;
+    }
+
+    main #section4 #left #sct4Txt {
+        top: 125px;
+    }
+
+    main #section4 #left #sct4Txt p {
+        font-size: 10px;
+    }
+
+    main #section4 #left #sct4Txt #legende {
+        font-size: 7px;
+    }
+
+    footer #section5 p {
+        font-size: 10px;
+    }
+
+    footer .footerDiv #pDec {
+        padding-right: 106px;
+    }
+
+    footer #footerNav ul li img {
+        width: 20px;
+    }
+}
